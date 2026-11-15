@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Homepage</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f7fa; color: #333; line-height: 1.8;
+            min-height: 100vh; display: flex; justify-content: center; align-items: center;
+            padding: 40px 20px;
+        }
+        .card {
+            background: #fff; max-width: 680px; width: 100%;
+            border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 48px 40px;
+        }
+        .header { text-align: center; margin-bottom: 32px; }
+        .avatar {
+            width: 100px; height: 100px; border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;
+            color: #fff; font-size: 36px; font-weight: 600;
+        }
+        h1 { font-size: 28px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+        .affiliation { font-size: 16px; color: #666; margin-bottom: 4px; }
+        .location { font-size: 14px; color: #999; }
+        .section { margin-top: 28px; }
+        .section-title {
+            font-size: 14px; font-weight: 600; color: #667eea;
+            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;
+        }
+        .section p, .section li { font-size: 15px; color: #444; }
+        .interests { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+        .tag {
+            background: #f0f3ff; color: #667eea;
+            padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;
+        }
+        .contact { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px; }
+        .contact a { color: #667eea; text-decoration: none; font-size: 14px; }
+        .contact a:hover { opacity: 0.7; text-decoration: underline; }
+        .footer {
+            text-align: center; margin-top: 36px; padding-top: 24px;
+            border-top: 1px solid #eee; font-size: 13px; color: #aaa;
+        }
+        @media (max-width: 480px) {
+            .card { padding: 32px 24px; }
+            h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <div class="avatar">Y</div>  <!-- 改这里：首字母 -->
+            <h1>Your Name</h1>  <!-- 改这里：你的姓名 -->
+            <div class="affiliation">Your University · Your Lab</div>  <!-- 改这里：学校和实验室 -->
+            <div class="location">City, Country</div>  <!-- 改这里：城市 -->
+        </div>
+
+        <div class="section">
+            <div class="section-title">About</div>
+            <p>
+                I am a graduate student at <strong>Your University</strong>,
+                working on precision agriculture, remote sensing, and intelligent decision-making systems.
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Research Interests</div>
+            <div class="interests">
+                <span class="tag">Precision Agriculture</span>
+                <span class="tag">Remote Sensing</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">LLM Agents</span>
+                <span class="tag">UAV Applications</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Contact</div>
+            <div class="contact">
+                <a href="mailto:your.email@example.com">📧 your.email@example.com</a>  <!-- 改这里：邮箱 -->
+                <a href="https://github.com/yourusername" target="_blank">🐙 GitHub</a>
+            </div>
+        </div>
+
+        <div class="footer">Last updated: November 2026</div>
+    </div>
+</body>
+</html>
